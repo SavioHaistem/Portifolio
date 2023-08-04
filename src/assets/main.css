@@ -1,0 +1,9 @@
+@font-face {
+   font-family: 'Legendary';
+   src: url('../../public/black_chancery/Legendary\ Runes\ Free\ Trial.ttf');
+}
+
+body {
+   background-color: rgb(56, 56, 56);
+   color: white;
+}
