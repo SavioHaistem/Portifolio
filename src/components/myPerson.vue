@@ -1,11 +1,11 @@
-<script>
-import { defineComponent } from '@vue/composition-api'
+<template>
+   <img class="avatar" src="../assets/images/ReadyPlayerMe-Avatar.png" alt="Avatar">
+</template>
 
-export default defineComponent({
-   setup() {
-      
-   },
-})
-</script>
-
-
+<style>
+   img.avatar {
+      position: absolute;
+      bottom: 0;
+      border: 1px solid red;
+   }
+</style>

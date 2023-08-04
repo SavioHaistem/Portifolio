@@ -1,11 +1,13 @@
 <script setup>
+  import myPerson from './components/myPerson.vue';
+  import navBar from './components/navBar.vue';
 </script>
 
 <template>
   <header>
-    <p>Savio Haistem</p>
+    <navBar name="Savio Haistem"/>
   </header>
+  <main>
+    <myPerson/>
+  </main>
 </template>
-
-<style scoped>
-</style>
