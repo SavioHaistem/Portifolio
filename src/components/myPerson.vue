@@ -6,6 +6,6 @@
    img.avatar {
       position: absolute;
       bottom: 0;
-      border: 1px solid red;
+      left: 2%;
    }
 </style>

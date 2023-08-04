@@ -3,7 +3,14 @@
    src: url('../../public/black_chancery/Legendary\ Runes\ Free\ Trial.ttf');
 }
 
+html {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+}
 body {
-   background-color: rgb(56, 56, 56);
+   background: linear-gradient(20deg,#3388FF -50%, #1E1E26 60%);
+   background-repeat: no-repeat;
+   background-size: contain;
    color: white;
 }
