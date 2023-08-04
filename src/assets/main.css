@@ -4,12 +4,12 @@
 }
 
 html {
-   margin: 0;
-   padding: 0;
    height: 100%;
 }
 body {
-   background: linear-gradient(20deg,#3388FF -50%, #1E1E26 60%);
+   margin: 0 !important;
+   padding: 0 !important;
+   background: linear-gradient(13deg,#6600cc 0%, #3b3444 40%);
    background-repeat: no-repeat;
    background-size: contain;
    color: white;

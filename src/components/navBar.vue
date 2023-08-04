@@ -7,21 +7,20 @@ export default {
 </script>
 
 <template>
-  <nav class="nav-bar">
+  <header class="main-header">
     <p class="user-name">{{ name }}</p>
-  </nav>
+  </header>
 </template>
 
 <style>
-nav.nav-bar {
+header.main-header {
   height: fit-content;
 }
 p.user-name {
-  width: fit-content;
   margin: 3px !important;
-  padding: 1rem 0 0 1rem;
-  color: #00CCCC;
+  padding: 2rem 0 0 2rem;
+  color: #efefef;
   font-family: Legendary;
-  font-size: xxx-large;
+  font-size: 60px;
 }
 </style>
