@@ -8,18 +8,29 @@ export default {
 
 <template>
   <header class="main-header">
+    <p class="rune">a</p>
     <p class="user-name">{{ name }}</p>
+    <p class="rune">b</p>
   </header>
 </template>
 
 <style>
+p.rune {
+  padding: 0 1rem;
+  font-size: 30px;
+  color: #7cffca;
+  font-family: runes;
+}
 header.main-header {
-  height: fit-content;
+  margin-top: 1rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
 }
 p.user-name {
-  text-shadow: 1px 2px 50px rgb(0, 188, 209);
+  height: fit-content;
+  text-shadow: 1px 2px 70px rgb(0, 188, 209);
   margin: 3px !important;
-  padding: 2rem 0 0 2rem;
   color: #efefef;
   font-family: Legendary;
   font-size: 60px;

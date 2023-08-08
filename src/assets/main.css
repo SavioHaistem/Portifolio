@@ -2,14 +2,21 @@
    font-family: 'Legendary';
    src: url('../../public/black_chancery/Legendary\ Runes\ Free\ Trial.ttf');
 }
-
+@font-face {
+   font-family: 'runes';
+   src: url('../../public/black_chancery/AmphibiaRunes-Regular.ttf');
+}
+@font-face {
+   font-family: 'josefin';
+   src: url('../../public/black_chancery/JosefinSans-Regular.ttf');
+}
 html {
    height: 100%;
 }
 body {
    margin: 0 !important;
    padding: 0 !important;
-   background: linear-gradient(13deg,#6600cc 0%, #3b3444 40%);
+   background: linear-gradient(13deg,#6600cc -20%, #3b3444 40%);
    background-repeat: no-repeat;
    background-size: contain;
    color: white;

@@ -1,13 +1,38 @@
 <script setup>
-  import myPerson from './components/myPerson.vue';
-  import navBar from './components/navBar.vue';
+import myPerson from './components/myPerson.vue';
+import navBar from './components/navBar.vue';
 </script>
 
 <template>
   <header>
-    <navBar name="Savio Haistem"/>
+    <navBar name="Savio Haistem" />
   </header>
-  <main>
-    <myPerson/>
+  <myPerson />
+  <main class="home-main">
+    <p class="magic-description">
+      Programar é como magia, você precisa pensar em uma solução para algo, quando sabe o que deve fazer
+      você irá tentar achar uma forma de fazer seus pensamentos virarem realidade, e então você começa a organizar
+      seus feitiços, vai ler alguns grimórios para ter certeza que está usando o melhor feitiço para cada problema
+      e então depois do relógio correr incontáveis horas enquanto você configura seus feitiços da melhor forma
+      que consegue a magia finalmente acontece, os computadores começarão a executar seu código e todas as regras que você pensou
+      e irão fazer algo acontecer. O mundo moderno está cheio de magos programadores, feitiços tecnológicos.
+    </p>
   </main>
 </template>
+<style scoped>
+  .home-main {
+    display: flex;
+    max-height: 40rem;
+    justify-content: center;
+    height: 40rem;
+  }
+  main > p.magic-description {
+    max-width: 40rem;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    font-family: josefin;
+    line-height: 2rem;
+    padding: 0 5rem;
+  }
+</style>
