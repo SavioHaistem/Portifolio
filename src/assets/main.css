@@ -10,10 +10,8 @@
    font-family: 'josefin';
    src: url('../../public/black_chancery/JosefinSans-Regular.ttf');
 }
-html {
-   height: 100%;
-}
 body {
+   overflow: hidden;
    margin: 0 !important;
    padding: 0 !important;
    background: linear-gradient(13deg,#6600cc -20%, #3b3444 40%);

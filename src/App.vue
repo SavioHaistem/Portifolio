@@ -1,63 +1,53 @@
-<script setup>
-import myPerson from './components/myPerson.vue';
-import navBar from './components/navBar.vue';
-</script>
-
+<!-- eslint-disable vue/no-unused-components -->
 <script>
+import Home from './Home.vue';
+import About from './About.vue';
 export default {
-  name: "App",
+  components: {
+    Home,
+    About
+  },
   data() {
     return {
-      home: true,
-      count: 0,
-      greenting: ['Programar é como fazer magia, você precisa pensar em uma solução para algo, ',
-        'quando sabe o que deve fazer você irá tentar achar uma forma de fazer seus  pensamentos ',
-        'virarem realidade, e então você começa a organizar seus feitiços, vai ler alguns grimórios ',
-        'para ter certeza que está usando o melhor feitiço para  cada problema e então depois do ',
-        'relógio correr incontáveis horas enquanto você  configura seus feitiços da melhor forma ',
-        'que consegue a magia finalmente acontece, os computadores começarão a executar seu código ',
-        'e todas as regras que você pensou e irão fazer algo acontecer. O mundo moderno está cheio ',
-        'de magos programadores, feitiços tecnológicos.'],
-    }
-  },
-
-  methods: {
-    toggleDisable() {
-      console.log(!this.enabled)
-      this.enabled = !this.enabled
-    },
-    increment() {
-      this.count++
+      currentTab: 'Home',
+      tabs: ['Home', 'About']
     }
   }
 }
 </script>
 
 <template>
-  <header>
-    <navBar name="Savio Haistem" />
-  </header>
-  <myPerson />
-  <main class="home-main">
-    <p class="magic-description" v-text="greenting.join('')"></p>
-  </main>
+  <section class="back">
+    <nav class="nav-bar">
+      <button v-for="tab in tabs" :key="tab" class="nav-button" @click="currentTab = tab">{{ tab }}</button>
+    </nav>
+    <component :is="currentTab"></component>
+  </section>
 </template>
-<style scoped>
-
-.home-main {
+<style>
+section.back {
   display: flex;
-  max-height: 40rem;
-  justify-content: center;
-  height: 40rem;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
-main > p.magic-description {
-  color: #efefef;
-  max-width: 40rem;
-  font-size: 20px;
-  text-align: center;
-  margin: auto;
-  font-family: josefin;
-  line-height: 2rem;
-  padding: 0 5rem;
+section > nav.nav-bar {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  position: absolute;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  width: 5rem;
+  height: 30rem;
+}
+section > nav button.nav-button {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 0.5rem;
 }
 </style>
