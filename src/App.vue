@@ -47,7 +47,7 @@ export default {
 </template>
 <style>
 * {
-  transition: 0.5s;
+  transition: 0.2s;
 }
 section.back {
   display: flex;
@@ -69,6 +69,11 @@ section > nav.nav-bar {
   width: 5rem;
   height: 30rem;
 }
+
+section > nav button {
+  transition: 0.7s all;
+}
+
 section > nav button.nav-button {
   background-color: #787878;
   border: #2e2e2e 3px solid;
