@@ -2,15 +2,24 @@
 <script>
 import Home from './Home.vue';
 import About from './About.vue';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faHatWizard } from '@fortawesome/free-solid-svg-icons'
+import { faGripfire } from "@fortawesome/free-brands-svg-icons"
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+library.add(faHatWizard, faGripfire)
 export default {
   components: {
     Home,
-    About
+    About,
+    FontAwesomeIcon
   },
   data() {
     return {
       currentTab: 'Home',
-      tabs: ['Home', 'About']
+      tabs: ['Home', 'About'],
+      icons: ['fa-solid fa-hat-wizard', 'fa-brands fa-gripfire'],
+      IconsColors: ['rgb(161, 241, 255)', 'rgb(255, 241, 148)']
     }
   }
 }
@@ -19,12 +28,27 @@ export default {
 <template>
   <section class="back">
     <nav class="nav-bar">
-      <button v-for="tab in tabs" :key="tab" class="nav-button" @click="currentTab = tab">{{ tab }}</button>
+      <button
+        v-for="(tab, index) in tabs"
+        :key="tab"
+        @click="currentTab = tab"
+        :class="['nav-button', { active: currentTab === tab }, currentTab]"
+        :style="currentTab === tab ? { boxShadow: '0px 0px 19px 0px ' + IconsColors[index]} : {}"
+      >
+        <font-awesome-icon
+          :icon="icons[index]"
+          :class="['tab-icon', tabs[index]]"
+          :style="currentTab === tab ? { color: IconsColors[index] } : {color:'#2e2e2e'}"
+        />
+      </button>
     </nav>
     <component :is="currentTab"></component>
   </section>
 </template>
 <style>
+* {
+  transition: 0.5s;
+}
 section.back {
   display: flex;
   width: 100vw;
@@ -46,8 +70,25 @@ section > nav.nav-bar {
   height: 30rem;
 }
 section > nav button.nav-button {
-  height: 4rem;
-  width: 4rem;
-  border-radius: 0.5rem;
+  background-color: #787878;
+  border: #2e2e2e 3px solid;
+  border-left: 2px solid rgb(147, 147, 147);
+  border-top: 2px solid rgb(160, 160, 160);
+  font-weight: bold;
+  height: 3.5rem;
+  width: 3rem;
+  border-radius: 1.2rem;
+  cursor: pointer;
+}
+
+nav > button .tab-icon {
+  width: 2rem;
+  height: 2rem;
+  color: black;
+}
+
+nav > button .tab-icon.Home {
+  width: calc(2rem - 0.4rem);
+  height: calc(2rem - 0.4rem);
 }
 </style>

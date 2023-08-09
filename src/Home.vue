@@ -1,6 +1,6 @@
 <script setup>
 import myPerson from './components/myPerson.vue';
-import navBar from './components/navBar.vue';
+import navBar from './components/headBar.vue';
 </script>
 <script>
 export default {

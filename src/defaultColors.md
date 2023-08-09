@@ -2,7 +2,7 @@ Background Principal: #1E1E26 (um tom escuro de roxo)
 Texto Principal: #FFFFFF (branco)
 Destaque: #FFB800 (amarelo dourado)
 Botões: #6600CC (roxo escuro)
-Links: #00FFCC (ciano claro)
+Links: #7cffca (ciano claro)
 Destaque do Texto: #FF3366 (vermelho vibrante)
 Sombra: #000000 (preto)
 

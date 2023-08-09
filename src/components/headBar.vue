@@ -1,5 +1,6 @@
 <script>
 export default {
+  name: "headBar",
   props: {
     name: String
   }
