@@ -5,8 +5,10 @@
 <style>
    img.avatar {
       position: absolute;
-      bottom: 0;
-      left: 2%;
       width: 300px;
+      bottom: -40%;
+      left: 0;
+      z-index: -1;
+      height: 630px;
    }
 </style>

@@ -53,21 +53,20 @@ section.back {
   display: flex;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
 }
 section > nav.nav-bar {
   position: absolute;
   right: 0;
+  bottom: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
   position: absolute;
   margin-top: 50vh;
-  transform: translateY(-50%);
-  width: 5rem;
-  height: 30rem;
+  width: 100%;
+  height: 5rem;
 }
 
 section > nav button {
@@ -95,5 +94,9 @@ nav > button .tab-icon {
 nav > button .tab-icon.Home {
   width: calc(2rem - 0.4rem);
   height: calc(2rem - 0.4rem);
+}
+
+@media screen and (max-width: 768px) {
+  
 }
 </style>

@@ -17,10 +17,10 @@ export default {
 
 <style>
 p.rune {
-  padding: 0 1rem;
-  font-size: 30px;
   color: #7cffca;
+  padding: 0px 0.5rem;
   font-family: runes;
+  font-size: 30px;
 }
 header.main-header {
   margin-top: 1rem;
@@ -36,4 +36,14 @@ p.user-name {
   font-family: Legendary;
   font-size: 60px;
 }
+@media screen and (max-width: 428px) {
+  p.rune {
+    transform: translateY(-20px);
+  }
+  p.user-name {
+    font-size: 40px;
+  }
+  header.main-header {
+}
+ }
 </style>

@@ -24,30 +24,47 @@ export default {
     <header>
       <navBar class="nav" name="Savio Haistem" />
     </header>
-    <myPerson />
     <main class="home-main">
+      <myPerson />
       <p class="magic-description" v-text="greenting.join('')"></p>
     </main>
   </section>
 </template>
  <style scoped>
+section > header {
+  width: 100%;
+}
 section.home {
-   width: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+header {
+  flex-basis: 100vw;
 }
 main.home-main {
   display: flex;
-  max-height: 40rem;
+  overflow: scroll;
   justify-content: center;
-  height: 40rem;
+  height: calc(100vh - 6.1rem);
 }
 main > p.magic-description {
+  padding: 2rem 4rem;
+  overflow: scroll;
   color: #efefef;
-  max-width: 40rem;
-  font-size: 20px;
   text-align: center;
-  margin: auto;
+  font-size: 18px;
+  height: 16rem;
+  max-width: 35rem;
   font-family: josefin;
-  line-height: 2rem;
-  padding: 0 5rem;
+}
+@media screen and (max-width: 1038px) {
+ main.home-main {
+  justify-content: start;
+ }
+  main > p.magic-description {
+
+ }
 }
 </style>
