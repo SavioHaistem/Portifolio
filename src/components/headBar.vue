@@ -43,7 +43,8 @@ p.user-name {
   p.user-name {
     font-size: 40px;
   }
-  header.main-header {
+  @media screen and (max-width: 664px) {
+    
+  }
 }
- }
 </style>

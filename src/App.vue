@@ -49,6 +49,9 @@ export default {
 * {
   transition: 0.2s;
 }
+*::-webkit-scrollbar {
+  display: none;
+}
 section.back {
   display: flex;
   width: 100vw;
@@ -59,14 +62,14 @@ section > nav.nav-bar {
   right: 0;
   bottom: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
   position: absolute;
   margin-top: 50vh;
-  width: 100%;
-  height: 5rem;
+  width: 5rem;
+  height: 100%;
 }
 
 section > nav button {
@@ -97,6 +100,10 @@ nav > button .tab-icon.Home {
 }
 
 @media screen and (max-width: 768px) {
-  
+  section > nav.nav-bar {
+    width: 100%;
+    height: 5rem;
+    flex-direction: row;
+  }
 }
 </style>

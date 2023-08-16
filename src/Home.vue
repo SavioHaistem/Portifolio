@@ -54,17 +54,15 @@ main > p.magic-description {
   overflow: scroll;
   color: #efefef;
   text-align: center;
-  font-size: 18px;
-  height: 16rem;
+  font-size: 20px;
+  height: 20rem;
   max-width: 35rem;
   font-family: josefin;
 }
-@media screen and (max-width: 1038px) {
- main.home-main {
-  justify-content: start;
- }
+@media screen and (max-width: 664px) {
   main > p.magic-description {
-
- }
+    font-size: 18px;
+    max-height: 16rem;
+  }
 }
 </style>
