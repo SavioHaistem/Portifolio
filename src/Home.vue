@@ -46,6 +46,7 @@ header {
 main.home-main {
   display: flex;
   overflow: scroll;
+  align-items: center;
   justify-content: center;
   height: calc(100vh - 6.1rem);
 }
@@ -60,6 +61,9 @@ main > p.magic-description {
   font-family: josefin;
 }
 @media screen and (max-width: 664px) {
+  main.home-main {
+    align-items: start;
+  }
   main > p.magic-description {
     font-size: 18px;
     max-height: 16rem;
