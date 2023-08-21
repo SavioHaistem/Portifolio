@@ -51,13 +51,14 @@ section.about > main.main-about > div.photo > img.my-photo {
 }
 
 section.about > main.main-about > div > h5.description {
+  border: 1px solid red;
   font-family: josefin;
   font-size: 17px;
   line-height: 1.8rem;
   padding: 2rem 5rem;
   height: 14rem;
   overflow: scroll;
-  width: 36rem;
+  max-width: 30rem;
 }
 @media screen and (max-width: 1150px) {
   section.about > main.main-about > div.photo > img.my-photo {
