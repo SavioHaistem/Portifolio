@@ -1,6 +1,6 @@
 <script setup>
 import myPerson from './components/myPerson.vue';
-import navBar from './components/headBar.vue';
+import headBar from './components/headBar.vue';
 </script>
 <script>
 export default {
@@ -22,7 +22,7 @@ export default {
 <template>
   <section class="home">
     <header>
-      <navBar class="nav" name="Savio Haistem" />
+      <headBar name="Savio Haistem"/>
     </header>
     <main class="home-main">
       <myPerson />
