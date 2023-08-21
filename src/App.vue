@@ -90,7 +90,7 @@ section > nav button.nav-button {
 
 nav > button .tab-icon {
   width: 2rem;
-  height: 2rem;
+  height: 2rem; 
   color: black;
 }
 

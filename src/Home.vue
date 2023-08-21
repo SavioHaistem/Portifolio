@@ -23,7 +23,7 @@ export default {
   <section class="home">
     <header>
       <headBar name="Savio Haistem"/>
-    </header>
+    </header> 
     <main class="home-main">
       <myPerson />
       <p class="magic-description" v-text="greenting.join('')"></p>
@@ -56,7 +56,7 @@ main > p.magic-description {
   color: #efefef;
   text-align: center;
   font-size: 20px;
-  height: 20rem;
+  line-height: 1.8rem;
   max-width: 35rem;
   font-family: josefin;
 }

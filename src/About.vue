@@ -15,7 +15,10 @@ export default {
       </div>
       <div>
         <h5 class="description">
-
+          Me chamo Sávio Haistem, tenho 21 anos, estudo programação desde os 18 anos, quando descobri que era a minha paixão.
+          Desde criança sempre fui muito curioso em relação á tecnologias, então essa curiosidade naturalmente me levou um dia
+          á me perguntar como são criados aplicativos ( mobiles ) o que me fez querer aprender a criar o meu próprio, futuramente
+          ao iniciar a busca por qual carreira eu deveria seguir eu não tive mais dúvidas, serei programador.
         </h5>
       </div>
     </main>
@@ -23,20 +26,17 @@ export default {
 </template>
 <style>
 section.about {
-  border: 1px solid red;
   width: 100%;
 }
 section > main.main-about {
   display: flex;
   flex-direction: row;
-  border: 2px solid skyblue;
   align-items: center;
   justify-content: center;
   height: calc(100% - 6.1rem);
 }
-
+ 
 section.about > main.main-about > div.photo {
-  border: 2px solid lime;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,9 +51,13 @@ section.about > main.main-about > div.photo > img.my-photo {
 }
 
 section.about > main.main-about > div > h5.description {
-  border: 2px solid rgb(255, 238, 0);
-  height: 30rem;
-  width: 50vw;
+  font-family: josefin;
+  font-size: 17px;
+  line-height: 1.8rem;
+  padding: 2rem 5rem;
+  height: 14rem;
+  overflow: scroll;
+  width: 36rem;
 }
 @media screen and (max-width: 1150px) {
   section.about > main.main-about > div.photo > img.my-photo {
@@ -61,14 +65,12 @@ section.about > main.main-about > div > h5.description {
     height: 10rem;
   }
   section.about > main.main-about > div.photo {
-    height: 13rem;
-    width: 100%;
+    height: 12rem;
   }
   section > main.main-about {
     flex-direction: column;
   }
   section.about > main.main-about > div > h5.description {
-    height: 40vh;
   }
 }
 </style>
