@@ -51,7 +51,8 @@ main.home-main {
   height: calc(100vh - 6.1rem);
 }
 main > p.magic-description {
-  padding: 2rem 4rem;
+  margin: auto 0px;
+  padding: 0px 4rem;
   overflow: scroll;
   color: #efefef;
   text-align: center;
@@ -65,6 +66,7 @@ main > p.magic-description {
     align-items: start;
   }
   main > p.magic-description {
+    margin: 6rem 0px;
     font-size: 18px;
     max-height: 16rem;
   }
