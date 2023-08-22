@@ -60,8 +60,8 @@ section.about > main.main-about > div > h5.description {
 }
 @media screen and (max-width: 1150px) {
   section.about > main.main-about > div.photo > img.my-photo {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
   }
   section.about > main.main-about > div.photo {
     height: 12rem;
@@ -70,6 +70,10 @@ section.about > main.main-about > div > h5.description {
     flex-direction: column;
   }
   section.about > main.main-about > div > h5.description {
+    font-size: 15px;
+    line-height: 1.3rem;
+    max-width: 70vw;
+    max-height: 32vh;
   }
 }
 </style>

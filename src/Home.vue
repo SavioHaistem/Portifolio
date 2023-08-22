@@ -33,6 +33,7 @@ export default {
  <style scoped>
 section > header {
   width: 100%;
+  border: 1px solid red;
 }
 section.home {
   width: 100%;
@@ -68,7 +69,7 @@ main > p.magic-description {
   main > p.magic-description {
     margin: 6rem 0px;
     font-size: 18px;
-    max-height: 16rem;
+    max-height: 50vh;
   }
 }
 </style>

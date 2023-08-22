@@ -106,4 +106,11 @@ nav > button .tab-icon.Home {
     flex-direction: row;
   }
 }
+@media screen and (max-width: 768px) {
+  section > nav.nav-bar {
+    width: 100%;
+    height: 5rem;
+    flex-direction: row;
+  }
+}
 </style>

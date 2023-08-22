@@ -11,15 +11,10 @@
       z-index: -1;
       height: 630px;
    }
-   @media screen and (max-width: 664px) {
+   @media screen and (max-width: 1046px) {
       img.avatar {
-         bottom: -50%;
-      }
-   }
-   @media screen and (max-width: 1196px) {
-      img.avatar {
-         height: 530px;
-         width: 250px;
+         visibility: hidden;
+         display: none;
       }
    }
 </style>
