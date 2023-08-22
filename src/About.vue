@@ -47,18 +47,16 @@ section.about > main.main-about > div.photo > img.my-photo {
   width: 15rem;
   height: 15rem;
   border-radius: 100%;
-  box-shadow: 0px 0px 70px 0px white;
+  box-shadow: 0px 0px 40px 1px white;
 }
 
 section.about > main.main-about > div > h5.description {
-  border: 1px solid red;
   font-family: josefin;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.8rem;
-  padding: 2rem 5rem;
-  height: 14rem;
+  padding: 0px 3rem;
   overflow: scroll;
-  max-width: 30rem;
+  max-width: 35rem;
 }
 @media screen and (max-width: 1150px) {
   section.about > main.main-about > div.photo > img.my-photo {
