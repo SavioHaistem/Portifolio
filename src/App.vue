@@ -19,7 +19,7 @@ export default {
       currentTab: 'Home',
       tabs: ['Home', 'About'],
       icons: ['fa-solid fa-hat-wizard', 'fa-brands fa-gripfire'],
-      IconsColors: ['rgb(161, 241, 255)', 'rgb(255, 241, 148)']
+      IconsColors: ['rgb(0, 217, 255)', 'rgb(255, 234, 0)']
     }
   }
 }

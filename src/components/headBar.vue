@@ -17,7 +17,7 @@ export default {
 
 <style>
 p.rune {
-  color: #7cffca;
+  color: #7cfff8;
   padding: 0px 0.5rem;
   font-family: runes;
   font-size: 30px;
