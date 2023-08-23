@@ -33,7 +33,6 @@ export default {
  <style scoped>
 section > header {
   width: 100%;
-  border: 1px solid red;
 }
 section.home {
   width: 100%;
