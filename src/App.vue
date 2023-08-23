@@ -19,7 +19,8 @@ export default {
       currentTab: 'Home',
       tabs: ['Home', 'About'],
       icons: ['fa-solid fa-hat-wizard', 'fa-brands fa-gripfire'],
-      IconsColors: ['rgb(107, 228, 255)', 'rgb(255, 238, 82)']
+      IconsColors: ['rgb(107, 228, 255)', '#FFFF00'],
+      IconsShadow: ['#A9FFFF','#FFFCA1']
     }
   }
 }
@@ -33,7 +34,7 @@ export default {
         :key="tab"
         @click="currentTab = tab"
         :class="['nav-button', { active: currentTab === tab }, currentTab]"
-        :style="currentTab === tab ? { boxShadow: '0px 0px 19px 0px ' + IconsColors[index]} : {}"
+        :style="currentTab === tab ? { boxShadow: '0px 0px 18px 0px ' + IconsShadow[index] } : {}"
       >
         <font-awesome-icon
           :icon="icons[index]"
