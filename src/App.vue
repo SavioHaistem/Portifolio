@@ -5,22 +5,25 @@ import About from './About.vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faHatWizard } from '@fortawesome/free-solid-svg-icons'
 import { faGripfire } from "@fortawesome/free-brands-svg-icons"
+import { faBookQuran } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import Projects from './Projects.vue';
 
-library.add(faHatWizard, faGripfire)
+library.add(faHatWizard, faGripfire, faBookQuran)
 export default {
   components: {
     Home,
     About,
+    Projects,
     FontAwesomeIcon
   },
   data() {
     return {
       currentTab: 'Home',
-      tabs: ['Home', 'About'],
-      icons: ['fa-solid fa-hat-wizard', 'fa-brands fa-gripfire'],
-      IconsColors: ['rgb(107, 228, 255)', '#FFFF00'],
-      IconsShadow: ['#A9FFFF','#FFFCA1']
+      tabs: ['Home', 'About', 'Projects'],
+      icons: ['fa-brands fa-gripfire', 'fa-solid fa-hat-wizard', 'fa-solid fa-book-quran'],
+      IconsColors: ['rgb(107, 228, 255)', '#FFFF00', '#FF78D4'],
+      IconsShadow: ['#A9FFFF','#FFFCA1','#e1a1bf']
     }
   }
 }
@@ -95,7 +98,11 @@ nav > button .tab-icon {
   color: black;
 }
 
-nav > button .tab-icon.Home {
+nav > button .tab-icon.About {
+  width: calc(2rem - 0.4rem);
+  height: calc(2rem - 0.4rem);
+}
+nav > button .tab-icon.Projects {
   width: calc(2rem - 0.4rem);
   height: calc(2rem - 0.4rem);
 }

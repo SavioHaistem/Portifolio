@@ -3,7 +3,7 @@ import headBar from './components/headBar.vue';
 </script>
 <script>
 export default {
-  name: "aboutVue"
+  name: "aboutPage"
 } 
 </script>
 <template>
