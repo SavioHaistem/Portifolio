@@ -1,38 +1,27 @@
 <template>
   <main class="projects-body">
     <li class="projects-list">
-      <ul class="project-item">
-        <img src="" alt="project-image" />
-        <p class="project-name"></p>
-        <p class="project-description"></p>
-      </ul>
-      <ul class="project-item">
-        <img src="" alt="project-image" />
-        <p class="project-name"></p>
-        <p class="project-description"></p>
-      </ul>
-      <ul class="project-item">
-        <img src="" alt="project-image" />
-        <p class="project-name"></p>
-        <p class="project-description"></p>
-      </ul>
-      <ul class="project-item">
-        <img src="" alt="project-image" />
-        <p class="project-name"></p>
-        <p class="project-description"></p>
-      </ul>
-      <ul class="project-item">
-        <img src="" alt="project-image" />
-        <p class="project-name"></p>
-        <p class="project-description"></p>
+      <ul v-for="(project, index) in projects" :key="index" class="project-item">
+        <img :src="project.image" alt="">
+        <p>{{ project.name }}</p>
+        <p>{{ project.description }}</p>
       </ul>
     </li>
   </main>
 </template>
 
 <script>
+import Jsondata from "@/assets/projects/projects.json"
 export default {
-  name: 'projectsPage'
+  name: 'projectsPage',
+  data() {
+    return {
+      projects: Jsondata.list,
+    }
+  },
+  mounted() {
+    console.log(this.projects)
+  }
 }
 </script>
 
@@ -61,6 +50,7 @@ main.projects-body {
    grid-auto-flow: row;
 }
 li.projects-list > ul.project-item {
+  background-image: url();
    border: 1px solid greenyellow;
    height: 100%;
    width: 13rem;

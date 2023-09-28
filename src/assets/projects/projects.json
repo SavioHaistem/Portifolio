@@ -1,0 +1,16 @@
+{
+   "list": [
+      {
+         "name":"gerenciador de senhas",
+         "image":"'./assets/images/projects/gerenciador-screenshoot.jpg'",
+         "description": "Um gerenciador de senhas simples, utiliza local storage",
+         "tecnologias": ["javascript","css","html"]
+      },
+      {
+         "name":"gerenciador de senhas",
+         "image":"assets/images/projects/gerenciador-screenshoot.jpg",
+         "description": "Um gerenciador de senhas simples, utiliza local storage",
+         "tecnologias": ["javascript","css","html"]
+      }
+   ]
+}
