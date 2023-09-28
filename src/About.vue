@@ -47,7 +47,7 @@ section.about > main.main-about > div.photo > img.my-photo {
   width: 15rem;
   height: 15rem;
   border-radius: 100%;
-  box-shadow: 0px 0px 40px 1px white;
+  box-shadow: 0px 0px 40px 0px white;
 }
 
 section.about > main.main-about > div > h5.description {
