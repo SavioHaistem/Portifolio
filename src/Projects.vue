@@ -5,18 +5,30 @@
         v-for="(project, index) in projects"
         :key="index"
         class="project-item"
-        @mouseover="changeVisibility((elementHovered = index))"
-        @mouseout="changeVisibility((elementHovered = null))"
+        @mouseover="elementHovered = index"
+        @mouseout="elementHovered = null"
       >
         <img :src="project.image" :alt="project.name" class="project-image" />
-        <div class="project-techs" v-show="techsVisibility && elementHovered == index" :key="index">
-          <img
-            class="project-tecnologie"
+        <div
+          class="tecnologies-list"
+          v-show="techsVisibility && elementHovered == index"
+          :key="index"
+        >
+          <div
             v-for="(tech, index) in project.tecnologias"
             :key="index"
-            :src="'../src/assets/images/tecnologies/' + tech + '.png'"
-          />
-          <p>{{ tech }}</p>
+            class="tecnologies"
+          >
+            <img
+              class="tecnologie-img"
+              :key="index"
+              :src="'../src/assets/images/tecnologies/' + tech + '.png'"
+              :alt="tech"
+              @mouseover="techNameIndex = index"
+              @mouseout="techNameIndex = null"
+            />
+            <p class="tecnologie-name" v-show="techNameVisibility && techNameIndex == index" :key="index">{{ tech }}</p>
+          </div>
         </div>
         <div class="project-info">
           <h3 class="project-name">{{ project.name }}</h3>
@@ -35,6 +47,8 @@ export default {
     return {
       projects: Jsondata.list,
       techsVisibility: true,
+      techNameVisibility: true,
+      techNameIndex: null,
       elementHovered: null
     }
   },
@@ -92,7 +106,7 @@ ul.projects-list > li.project-item {
 ul.projects-list > li.project-item:hover {
   box-shadow: 0px 0px 30px 0px rgba(166, 255, 251, 0.236);
 }
-ul.projects-list > li.project-item > div.project-techs {
+ul.projects-list > li.project-item > div.tecnologies-list {
   transform: translateY(-101px);
   overflow: auto;
   margin-bottom: -96px;
@@ -106,13 +120,21 @@ ul.projects-list > li.project-item > div.project-techs {
   transition: 0.3s;
   animation: background-up;
 }
-ul.projects-list > li.project-item > div.project-techs > img.project-tecnologie {
+ul.projects-list > li.project-item > div.tecnologies-list > div.tecnologies > img.tecnologie-img {
   background-color: white;
   border-radius: 10px;
   padding: 5px;
   height: 19px;
   width: 19px;
   margin-bottom: 10px;
+}
+ul.projects-list > li.project-item > div.tecnologies-list > div.tecnologies > p.tecnologie-name {
+  position: absolute;
+  top: 0;
+  background-color: #00000069;
+  padding: 0px 10px;
+  border-radius: 5px;
+  font-size: 20px;
 }
 ul.projects-list > li.project-item > div.project-info {
   color: rgb(205, 223, 255);
