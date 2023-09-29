@@ -1,5 +1,5 @@
 <template>
-   <img class="avatar" src="../assets/images/ReadyPlayerMe-Avatar.png" alt="Avatar">
+   <img class="avatar" src="../../public/images/ReadyPlayerMe-Avatar.png" alt="Avatar">
 </template>
 
 <style>

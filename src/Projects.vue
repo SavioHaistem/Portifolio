@@ -22,7 +22,7 @@
             <img
               class="tecnologie-img"
               :key="index"
-              :src="'../src/assets/images/tecnologies/' + tech + '.png'"
+              :src="'/images/tecnologies/' + tech + '.png'"
               :alt="tech"
               @mouseover="techNameIndex = index"
               @mouseout="techNameIndex = null"

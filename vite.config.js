@@ -9,9 +9,6 @@ export default defineConfig({
     vue(),
   ],
   build: {
-    rollupOptions: {
-      external: "@fortawesome/vue-fontawesome",
-    }
   },
   resolve: {
     alias: {

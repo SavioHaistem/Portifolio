@@ -33,7 +33,7 @@ p.user-name {
   text-shadow: 1px 2px 70px rgb(0, 188, 209);
   margin: 3px !important;
   color: #efefef;
-  font-family: Legendary;
+  font-family: blkchcry;
   font-size: 60px;
 }
 @media screen and (max-width: 428px) {

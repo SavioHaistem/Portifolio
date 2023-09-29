@@ -1,14 +1,18 @@
 @font-face {
    font-family: 'Legendary';
-   src: url('../../public/black_chancery/Legendary\ Runes\ Free\ Trial.ttf');
+   src: url('./black_chancery/Legendary\ Runes\ Free\ Trial.ttf');
 }
 @font-face {
    font-family: 'runes';
-   src: url('../../public/black_chancery/AmphibiaRunes-Regular.ttf');
+   src: url('./black_chancery/AmphibiaRunes-Regular.ttf');
 }
 @font-face {
    font-family: 'josefin';
-   src: url('../../public/black_chancery/JosefinSans-Regular.ttf');
+   src: url('./black_chancery/JosefinSans-Regular.ttf');
+}
+@font-face {
+   font-family: 'blkchcry';
+   src: url('./black_chancery/blkchcry.ttf');
 }
 body {
    overflow: hidden;
