@@ -1,36 +1,38 @@
 <script setup>
-import myPerson from './components/myPerson.vue';
-import headBar from './components/headBar.vue';
+import myPerson from './components/myPerson.vue'
+import headBar from './components/headBar.vue'
 </script>
 <script>
 export default {
-  name: "homeVue",
+  name: 'homeVue',
   data() {
     return {
-      greenting: ['Programar é como fazer magia, você precisa pensar em uma solução para algo, ',
+      greenting: [
+        'Programar é como fazer magia, você precisa pensar em uma solução para algo, ',
         'quando sabe o que deve fazer você irá tentar achar uma forma de fazer seus  pensamentos ',
         'virarem realidade, e então você começa a organizar seus feitiços, vai ler alguns grimórios ',
         'para ter certeza que está usando o melhor feitiço para  cada problema e então depois do ',
         'relógio correr incontáveis horas enquanto você  configura seus feitiços da melhor forma ',
         'que consegue a magia finalmente acontece, os computadores começarão a executar seu código ',
         'e todas as regras que você pensou e irão fazer algo acontecer. O mundo moderno está cheio ',
-        'de magos programadores, feitiços tecnológicos.'],
+        'de magos programadores, feitiços tecnológicos.'
+      ]
     }
-  },
+  }
 }
 </script>
 <template>
   <section class="home">
     <header>
-      <headBar name="Savio Haistem"/>
-    </header> 
+      <headBar name="Savio Haistem" />
+    </header>
     <main class="home-main">
       <myPerson />
       <p class="magic-description" v-text="greenting.join('')"></p>
     </main>
   </section>
 </template>
- <style scoped>
+<style scoped>
 section > header {
   width: 100%;
 }

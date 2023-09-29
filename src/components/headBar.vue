@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: "headBar",
+  name: 'headBar',
   props: {
     name: String
   }
@@ -44,7 +44,6 @@ p.user-name {
     font-size: 40px;
   }
   @media screen and (max-width: 664px) {
-    
   }
 }
 </style>

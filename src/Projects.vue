@@ -14,11 +14,7 @@
           v-show="techsVisibility && elementHovered == index"
           :key="index"
         >
-          <div
-            v-for="(tech, index) in project.tecnologias"
-            :key="index"
-            class="tecnologies"
-          >
+          <div v-for="(tech, index) in project.tecnologias" :key="index" class="tecnologies">
             <img
               class="tecnologie-img"
               :key="index"
@@ -27,7 +23,13 @@
               @mouseover="techNameIndex = index"
               @mouseout="techNameIndex = null"
             />
-            <p class="tecnologie-name" v-show="techNameVisibility && techNameIndex == index" :key="index">{{ tech }}</p>
+            <p
+              class="tecnologie-name"
+              v-show="techNameVisibility && techNameIndex == index"
+              :key="index"
+            >
+              {{ tech }}
+            </p>
           </div>
         </div>
         <div class="project-info">

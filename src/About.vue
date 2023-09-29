@@ -1,10 +1,10 @@
 <script setup>
-import headBar from './components/headBar.vue';
+import headBar from './components/headBar.vue'
 </script>
 <script>
 export default {
-  name: "aboutPage"
-} 
+  name: 'aboutPage'
+}
 </script>
 <template>
   <section class="about">
@@ -15,10 +15,12 @@ export default {
       </div>
       <div>
         <h5 class="description">
-          Me chamo Sávio Haistem, tenho 21 anos, estudo programação desde os 18 anos, quando descobri que era a minha paixão.
-          Desde criança sempre fui muito curioso em relação á tecnologias, então essa curiosidade naturalmente me levou um dia
-          á me perguntar como são criados aplicativos ( mobiles ) o que me fez querer aprender a criar o meu próprio, futuramente
-          ao iniciar a busca por qual carreira eu deveria seguir eu não tive mais dúvidas, serei programador.
+          Me chamo Sávio Haistem, tenho 21 anos, estudo programação desde os 18 anos, quando
+          descobri que era a minha paixão. Desde criança sempre fui muito curioso em relação á
+          tecnologias, então essa curiosidade naturalmente me levou um dia á me perguntar como são
+          criados aplicativos ( mobiles ) o que me fez querer aprender a criar o meu próprio,
+          futuramente ao iniciar a busca por qual carreira eu deveria seguir eu não tive mais
+          dúvidas, serei programador.
         </h5>
       </div>
     </main>
@@ -35,7 +37,7 @@ section > main.main-about {
   justify-content: center;
   height: calc(100% - 6.1rem);
 }
- 
+
 section.about > main.main-about > div.photo {
   display: flex;
   align-items: center;

@@ -1,13 +1,13 @@
 <!-- eslint-disable vue/no-unused-components -->
 <script>
-import Home from './Home.vue';
-import About from './About.vue';
-import { library } from '@fortawesome/fontawesome-svg-core';
+import Home from './Home.vue'
+import About from './About.vue'
+import { library } from '@fortawesome/fontawesome-svg-core'
 import { faHatWizard } from '@fortawesome/free-solid-svg-icons'
-import { faGripfire } from "@fortawesome/free-brands-svg-icons"
-import { faBookQuran } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import Projects from './Projects.vue';
+import { faGripfire } from '@fortawesome/free-brands-svg-icons'
+import { faBookQuran } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import Projects from './Projects.vue'
 
 library.add(faHatWizard, faGripfire, faBookQuran)
 export default {
@@ -23,7 +23,7 @@ export default {
       tabs: ['Home', 'About', 'Projects'],
       icons: ['fa-brands fa-gripfire', 'fa-solid fa-hat-wizard', 'fa-solid fa-book-quran'],
       IconsColors: ['rgb(107, 228, 255)', '#FFFF00', '#FF78D4'],
-      IconsShadow: ['#A9FFFF','#FFFCA1','#e1a1bf']
+      IconsShadow: ['#A9FFFF', '#FFFCA1', '#e1a1bf']
     }
   }
 }
@@ -42,7 +42,7 @@ export default {
         <font-awesome-icon
           :icon="icons[index]"
           :class="['tab-icon', tabs[index]]"
-          :style="currentTab === tab ? { color: IconsColors[index] } : {color:'#2e2e2e'}"
+          :style="currentTab === tab ? { color: IconsColors[index] } : { color: '#2e2e2e' }"
         />
       </button>
     </nav>
@@ -94,7 +94,7 @@ section > nav button.nav-button {
 
 nav > button .tab-icon {
   width: 2rem;
-  height: 2rem; 
+  height: 2rem;
   color: black;
 }
 
