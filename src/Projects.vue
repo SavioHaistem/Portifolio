@@ -132,15 +132,20 @@ ul.projects-list > li.project-item > div.tecnologies-list > div.tecnologies > im
 }
 ul.projects-list > li.project-item > div.tecnologies-list > div.tecnologies > p.tecnologie-name {
   position: absolute;
-  top: 0;
+  top: -10px;
   background-color: #00000069;
-  padding: 0px 10px;
+  padding: 2px 10px;
+  text-align: center;
+  line-height: 150%;
   border-radius: 5px;
   font-size: 20px;
 }
 ul.projects-list > li.project-item > div.project-info {
   color: rgb(205, 223, 255);
   padding: 0px 2rem;
+}
+ul.projects-list > li.project-item > div.project-info > p.project-description {
+  color: white;
 }
 ul.projects-list > li.project-item > div.project-info > p.project-description {
   overflow: auto;
@@ -152,5 +157,11 @@ ul.projects-list > li.project-item > img.project-image {
   object-fit: cover;
   border-radius: 8px 8px 0px 0px;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  ul.projects-list > li.project-item > div.tecnologies-list {
+    height: 30%;
+  }
 }
 </style>
