@@ -109,14 +109,14 @@ ul.projects-list > li.project-item:hover {
   box-shadow: 0px 0px 30px 0px rgba(166, 255, 251, 0.236);
 }
 ul.projects-list > li.project-item > div.tecnologies-list {
-  transform: translateY(-101px);
+  transform: translateY(-100px);
   overflow: auto;
   margin-bottom: -96px;
   display: flex;
   gap: 5px;
   padding-left: 20px;
   align-items: flex-end;
-  height: 6rem;
+  height: 29.9%;
   width: 100%;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.589), rgba(80, 80, 80, 0));
   transition: 0.3s;

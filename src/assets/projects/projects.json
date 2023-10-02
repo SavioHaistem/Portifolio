@@ -4,13 +4,13 @@
       "name": "gerenciador de senhas",
       "image": "/images/projects/gerenciador-screenshoot.jpg",
       "description": "Um gerenciador de senhas simples, utiliza local storage",
-      "tecnologias": ["javascript", "pinia"]
+      "tecnologias": ["javascript", "css", "html"]
     },
     {
       "name": "Aleator",
       "image": "/images/projects/aleator.png",
       "description": "Um projeto que faz sorteios baseado em números que o usuário escolheu de 1 a maximo escolhido, foi utilizado em um sorteio do web-aulão 2020 do Rio Grande do Norte",
-      "tecnologias": ["javascript", "css"]
+      "tecnologias": ["javascript", "css","html"]
     }
   ]
 }
