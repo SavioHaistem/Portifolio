@@ -92,15 +92,18 @@ main.projects-body {
   padding: 2rem;
   overflow: auto;
   width: 80vw;
-  height: 30rem;
   display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  grid-auto-rows: 20rem;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  grid-gap: 20px;
+  grid-auto-rows: 21rem;
   grid-auto-flow: row;
+  justify-items: center;
 }
 ul.projects-list > li.project-item {
   overflow: hidden;
+  width: 18rem;
+  height: 21rem;
+  cursor: pointer;
   background-color: #484848;
   border: 1px solid #626262;
   border-radius: 8px;
@@ -109,9 +112,9 @@ ul.projects-list > li.project-item:hover {
   box-shadow: 0px 0px 30px 0px rgba(166, 255, 251, 0.236);
 }
 ul.projects-list > li.project-item > div.tecnologies-list {
-  transform: translateY(-100px);
+  transform: translateY(-105px);
   overflow: auto;
-  margin-bottom: -96px;
+  margin-bottom: -100px;
   display: flex;
   gap: 5px;
   padding-left: 20px;
@@ -142,14 +145,12 @@ ul.projects-list > li.project-item > div.tecnologies-list > div.tecnologies > p.
 }
 ul.projects-list > li.project-item > div.project-info {
   color: rgb(205, 223, 255);
-  padding: 0px 2rem;
+  padding: 0px 1.5rem;
 }
 ul.projects-list > li.project-item > div.project-info > p.project-description {
   color: white;
-}
-ul.projects-list > li.project-item > div.project-info > p.project-description {
   overflow: auto;
-  height: 5rem;
+  height: 6rem;
 }
 ul.projects-list > li.project-item > img.project-image {
   width: 100%;
