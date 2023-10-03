@@ -83,7 +83,7 @@ main.projects-body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 28rem;
+  height: 100%;
   margin: auto 5rem auto 0px;
 }
 
@@ -91,7 +91,9 @@ main.projects-body {
   list-style: none;
   padding: 2rem;
   overflow: auto;
-  width: 80vw;
+  min-width: 40rem;
+  width: 80rem;
+  max-height: 80vh;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   grid-gap: 20px;
@@ -159,20 +161,31 @@ ul.projects-list > li.project-item > img.project-image {
   border-radius: 8px 8px 0px 0px;
   overflow: hidden;
 }
-
+@media only screen and (max-width: 1430px) {
+  .projects-body > ul.projects-list {
+    width: 62rem;
+  }
+}
+@media only screen and (max-width: 1107px) {
+  .projects-body > ul.projects-list {
+    width: 32rem;
+  }
+}
 @media only screen and (max-width: 768px) {
   ul.projects-list > li.project-item > div.tecnologies-list {
     transform: translateY(-103px);
     margin-bottom: -100.5px;
   }
   main.projects-body {
-    align-items: end;
-    padding-top: 5rem;
+    align-items: start;
+    justify-content: center;
   }
   .projects-body > ul.projects-list {
     max-height: 70vh;
     width: 100vw;
-    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    min-width: auto;
+    max-width: auto;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     grid-gap: 20px;
     grid-auto-rows: 21rem;
   }
