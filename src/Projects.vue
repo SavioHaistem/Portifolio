@@ -162,12 +162,14 @@ ul.projects-list > li.project-item > img.project-image {
 
 @media only screen and (max-width: 768px) {
   ul.projects-list > li.project-item > div.tecnologies-list {
-    transform: translateY(-100px);
-    margin-bottom: -95.8px;
+    transform: translateY(-99px);
+    margin-bottom: -95.7px;
+  }
+  main.projects-body {
+    align-items: end;
+    padding-top: 5rem;
   }
   .projects-body > ul.projects-list {
-    border: 1px solid red;
-    margin-bottom: 5rem;
     max-height: 70vh;
     width: 100vw;
     grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
