@@ -24,6 +24,13 @@
       "description": "Frontend da empresa Sharktech, venda do curso da empresa",
       "tecnologias": ["nextjs", "react","tailwind","typescript"],
       "link":"https://sharktech.vercel.app/"
+    },
+    {
+      "name": "Cred.io",
+      "image": "/images/projects/credio.png",
+      "description": "Frontend institucional do projeto Credio da empresa GearCop, um projeto que reúne bancos para empresas que financeiam veículos",
+      "tecnologias": ["nuxtjs", "vue","pinia","typescript"],
+      "link":"https://sharktech.vercel.app/"
     }
   ]
 }
