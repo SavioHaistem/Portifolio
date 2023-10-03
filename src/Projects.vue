@@ -178,7 +178,7 @@ ul.projects-list > li.project-item > img.project-image {
   }
   ul.projects-list > li.project-item {
     width: 17rem;
-    height: 20rem;
+    height: 21rem;
   }
 }
 </style>
