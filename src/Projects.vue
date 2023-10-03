@@ -162,7 +162,7 @@ ul.projects-list > li.project-item > img.project-image {
 
 @media only screen and (max-width: 768px) {
   ul.projects-list > li.project-item > div.tecnologies-list {
-    transform: translateY(-103px);
+    transform: translateY(-104px);
   }
 }
 </style>
