@@ -74,7 +74,6 @@ section.about > main.main-about > div > h5.description {
     font-size: 15px;
     line-height: 1.3rem;
     max-width: 70vw;
-    max-height: 32vh;
   }
 
   @media screen and (max-width: 770px) {
