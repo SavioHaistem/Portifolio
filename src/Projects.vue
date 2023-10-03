@@ -162,8 +162,8 @@ ul.projects-list > li.project-item > img.project-image {
 
 @media only screen and (max-width: 768px) {
   ul.projects-list > li.project-item > div.tecnologies-list {
-    transform: translateY(-99px);
-    margin-bottom: -95.7px;
+    transform: translateY(-103px);
+    margin-bottom: -100.5px;
   }
   main.projects-body {
     align-items: end;
@@ -174,7 +174,7 @@ ul.projects-list > li.project-item > img.project-image {
     width: 100vw;
     grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
     grid-gap: 20px;
-    grid-auto-rows: 20rem;
+    grid-auto-rows: 21rem;
   }
   ul.projects-list > li.project-item {
     width: 17rem;
