@@ -23,3 +23,6 @@ body {
    background-size: contain;
    color: white;
 }
+* {
+   -webkit-tap-highlight-color: transparent;  
+}
