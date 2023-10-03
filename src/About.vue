@@ -43,7 +43,6 @@ section.about > main.main-about > div.photo {
   align-items: center;
   justify-content: center;
   width: 20rem;
-  height: 100%;
 }
 section.about > main.main-about > div.photo > img.my-photo {
   width: 15rem;
@@ -76,6 +75,13 @@ section.about > main.main-about > div > h5.description {
     line-height: 1.3rem;
     max-width: 70vw;
     max-height: 32vh;
+  }
+
+  @media screen and (max-width: 770px) {
+    section > main.main-about {
+      margin-top: 2rem;
+      justify-content: start;
+    }    
   }
 }
 </style>
