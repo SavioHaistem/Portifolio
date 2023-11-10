@@ -28,7 +28,6 @@ export default {
   }
 }
 </script>
-
 <template>
   <section class="back">
     <nav class="nav-bar">
