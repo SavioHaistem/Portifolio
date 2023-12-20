@@ -1,37 +1,8 @@
 <template>
   <main class="projects-body">
     <ul class="projects-list">
-      <li
-        v-for="(project, index) in projects"
-        :key="index"
-        class="project-item"
-        @mouseover="elementHovered = index"
-        @mouseout="elementHovered = null"
-      >
+      <li v-for="(project, index) in projects" :key="index" class="project-item">
         <img :src="project.image" :alt="project.name" class="project-image" />
-        <div
-          class="tecnologies-list"
-          v-show="techsVisibility && elementHovered == index"
-          :key="index"
-        >
-          <div v-for="(tech, index) in project.tecnologias" :key="index" class="tecnologies">
-            <img
-              class="tecnologie-img"
-              :key="index"
-              :src="'/images/tecnologies/' + tech + '.png'"
-              :alt="tech"
-              @mouseover="techNameIndex = index"
-              @mouseout="techNameIndex = null"
-            />
-            <p
-              class="tecnologie-name"
-              v-show="techNameVisibility && techNameIndex == index"
-              :key="index"
-            >
-              {{ tech }}
-            </p>
-          </div>
-        </div>
         <div class="project-info">
           <h3 class="project-name">{{ project.name }}</h3>
           <p class="project-description">{{ project.description }}</p>
@@ -80,73 +51,46 @@ export default {
 }
 main.projects-body {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  margin: auto 5rem auto 0px;
 }
 
 .projects-body > ul.projects-list {
+  overflow: scroll;
+  margin: auto;
   list-style: none;
-  padding: 2rem;
-  overflow: auto;
-  min-width: 40rem;
-  width: 80rem;
-  max-height: 80vh;
+  padding: 5rem;
+  width: 80vw;
   display: grid;
+  max-height: 70vh;
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-  grid-gap: 20px;
-  grid-auto-rows: 21rem;
+  grid-auto-rows: 22rem;
   grid-auto-flow: row;
   justify-items: center;
+  justify-content: center;
+  align-items: center;
 }
 ul.projects-list > li.project-item {
+  font-size: 15px;
+  border: 1px solid rgba(160, 160, 160, 0.308);
   overflow: hidden;
-  width: 18rem;
+  width: 17rem;
   height: 21rem;
   cursor: pointer;
-  background-color: #484848;
-  border: 1px solid #626262;
+  background-color: #4e415c;
+  border: 1px solid rgba(255, 255, 255, 0.356);
   border-radius: 8px;
 }
 ul.projects-list > li.project-item:hover {
-  box-shadow: 0px 0px 30px 0px rgba(166, 255, 251, 0.236);
-}
-ul.projects-list > li.project-item > div.tecnologies-list {
-  transform: translateY(-105px);
-  overflow: auto;
-  margin-bottom: -100px;
-  display: flex;
-  gap: 5px;
-  padding-left: 20px;
-  align-items: flex-end;
-  height: 29.9%;
-  width: 100%;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.589), rgba(80, 80, 80, 0));
-  transition: 0.3s;
-  animation: background-up;
-}
-ul.projects-list > li.project-item > div.tecnologies-list > div.tecnologies > img.tecnologie-img {
-  background-color: white;
-  border-radius: 10px;
-  padding: 5px;
-  height: 19px;
-  width: 19px;
-  margin-bottom: 10px;
-}
-ul.projects-list > li.project-item > div.tecnologies-list > div.tecnologies > p.tecnologie-name {
-  position: absolute;
-  top: -10px;
-  background-color: #00000069;
-  padding: 2px 10px;
-  text-align: center;
-  line-height: 150%;
-  border-radius: 5px;
-  font-size: 20px;
+  box-shadow: 0px 0px 60px 0px rgba(0, 3, 3, 0.747);
+  border: 2px solid white;
+  width: calc(100% + 2rem);
+  height: calc(100% + 2rem);
+  z-index: 1;
 }
 ul.projects-list > li.project-item > div.project-info {
-  color: rgb(205, 223, 255);
+  color: rgb(214, 254, 255);
   padding: 0px 1.5rem;
 }
 ul.projects-list > li.project-item > div.project-info > p.project-description {
@@ -161,37 +105,56 @@ ul.projects-list > li.project-item > img.project-image {
   border-radius: 8px 8px 0px 0px;
   overflow: hidden;
 }
-@media only screen and (max-width: 1430px) {
+
+
+@media screen and (max-width: 1436px) {
   .projects-body > ul.projects-list {
-    width: 62rem;
+    width: 80vw;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 18rem));
+    grid-auto-rows: 21rem;
+  }
+
+  ul.projects-list > li.project-item {
+    font-size: 14px;
+    width: 17rem;
+    height: 20rem;
+  }
+  ul.projects-list > li.project-item:hover {
+    width: calc(100% + 1rem);
+    height: calc(100% + 1rem);
   }
 }
+
 @media only screen and (max-width: 1107px) {
   .projects-body > ul.projects-list {
-    width: 32rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  ul.projects-list > li.project-item > div.tecnologies-list {
-    transform: translateY(-103px);
-    margin-bottom: -100.5px;
-  }
-  main.projects-body {
-    align-items: start;
-    justify-content: center;
-  }
-  .projects-body > ul.projects-list {
-    max-height: 70vh;
-    width: 100vw;
-    min-width: auto;
-    max-width: auto;
-    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 15rem));
     grid-auto-rows: 21rem;
   }
   ul.projects-list > li.project-item {
-    width: 17rem;
-    height: 21rem;
+    font-size: 12px;
+    width: 14rem;
+    height: 20rem;
+  }
+  ul.projects-list > li.project-item:hover {
+    width: calc(14rem + 2rem);
+    height: calc(20rem + 2rem);
+  }
+}
+
+@media only screen and (max-width: 418px) {
+  .projects-body > ul.projects-list {
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    grid-auto-rows: 22rem;
+  }
+  ul.projects-list > li.project-item {
+    font-size: 12px;
+    width: 13rem;
+    height: 20rem;
+  }
+  ul.projects-list > li.project-item:hover {
+    width: 15.5rem;
+    height: 22.5rem;
   }
 }
 </style>
