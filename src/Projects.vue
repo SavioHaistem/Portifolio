@@ -60,7 +60,7 @@ main.projects-body {
   overflow: scroll;
   margin: auto;
   list-style: none;
-  padding: 2rem;
+  padding: 5rem;
   width: 80vw;
   display: grid;
   max-height: 70vh;
@@ -79,17 +79,18 @@ ul.projects-list > li.project-item {
   height: 21rem;
   cursor: pointer;
   background-color: #4e415c;
-  border: 1px solid gray;
+  border: 1px solid rgba(255, 255, 255, 0.356);
   border-radius: 8px;
 }
 ul.projects-list > li.project-item:hover {
   box-shadow: 0px 0px 60px 0px rgba(0, 3, 3, 0.747);
+  border: 2px solid white;
   width: calc(100% + 2rem);
   height: calc(100% + 2rem);
   z-index: 1;
 }
 ul.projects-list > li.project-item > div.project-info {
-  color: rgb(205, 223, 255);
+  color: rgb(214, 254, 255);
   padding: 0px 1.5rem;
 }
 ul.projects-list > li.project-item > div.project-info > p.project-description {
