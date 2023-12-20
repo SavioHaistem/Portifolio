@@ -9,10 +9,17 @@ img.avatar {
   bottom: -30%;
   left: 0;
   z-index: -1;
-  height: 700px;
+  height: 720px;
+  margin-left: 10rem;
+}
+@media screen and (max-width: 1450px) {
+  img.avatar {
+    margin: 1rem;
+  }
 }
 @media screen and (max-width: 1046px) {
   img.avatar {
+    margin: 0px;
     bottom: -45%;
   }
 }
