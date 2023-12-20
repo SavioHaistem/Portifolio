@@ -57,12 +57,13 @@ main.projects-body {
 }
 
 .projects-body > ul.projects-list {
-  border: 1px solid red;
+  overflow: scroll;
   margin: auto;
   list-style: none;
   padding: 2rem;
   width: 80vw;
   display: grid;
+  max-height: 70vh;
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   grid-auto-rows: 22rem;
   grid-auto-flow: row;
@@ -72,12 +73,12 @@ main.projects-body {
 }
 ul.projects-list > li.project-item {
   font-size: 15px;
-  border: 1px solid white;
+  border: 1px solid rgba(160, 160, 160, 0.308);
   overflow: hidden;
   width: 17rem;
   height: 21rem;
   cursor: pointer;
-  background-color: #484848;
+  background-color: #4e415c;
   border: 1px solid gray;
   border-radius: 8px;
 }
@@ -103,34 +104,21 @@ ul.projects-list > li.project-item > img.project-image {
   border-radius: 8px 8px 0px 0px;
   overflow: hidden;
 }
+
+
 @media screen and (max-width: 1436px) {
   .projects-body > ul.projects-list {
-    border: 1px solid rgb(255, 255, 255);
-    margin: auto;
-    list-style: none;
-    padding: 2rem;
     width: 80vw;
-    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(17rem, 18rem));
     grid-auto-rows: 21rem;
-    grid-auto-flow: row;
-    justify-items: center;
-    justify-content: center;
   }
 
   ul.projects-list > li.project-item {
     font-size: 14px;
-    border: 1px solid white;
-    overflow: hidden;
     width: 17rem;
     height: 20rem;
-    cursor: pointer;
-    background-color: #484848;
-    border: 1px solid gray;
-    border-radius: 8px;
   }
   ul.projects-list > li.project-item:hover {
-    box-shadow: 0px 0px 60px 0px rgba(0, 3, 3, 0.747);
     width: calc(100% + 1rem);
     height: calc(100% + 1rem);
   }
@@ -138,16 +126,9 @@ ul.projects-list > li.project-item > img.project-image {
 
 @media only screen and (max-width: 1107px) {
   .projects-body > ul.projects-list {
-    border: 1px solid blue;
-    overflow: scroll;
-    list-style: none;
-    padding: 2rem;
-    width: 80vw;
-    height: 80vh;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(14rem, 15rem));
     grid-auto-rows: 21rem;
-    grid-auto-flow: row;
   }
   ul.projects-list > li.project-item {
     font-size: 12px;
@@ -155,7 +136,6 @@ ul.projects-list > li.project-item > img.project-image {
     height: 20rem;
   }
   ul.projects-list > li.project-item:hover {
-    font-size: 12px;
     width: calc(14rem + 2rem);
     height: calc(20rem + 2rem);
   }
@@ -163,17 +143,7 @@ ul.projects-list > li.project-item > img.project-image {
 
 @media only screen and (max-width: 418px) {
   .projects-body > ul.projects-list {
-    border: 1px solid greenyellow;
-    overflow: scroll;
-    padding: 0px;
-    padding-bottom: 5rem;
-    padding-top: 5rem;
-    max-height: 70vh;
-    width: 100vw;
-    min-width: auto;
-    max-width: auto;
     grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
-    grid-gap: 0px;
     grid-auto-rows: 22rem;
   }
   ul.projects-list > li.project-item {
