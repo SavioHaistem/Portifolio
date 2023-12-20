@@ -22,7 +22,7 @@ export default {
   data() {
     return {
       currentTab: 'Home',
-      tabs: ['Home', 'About', 'Projects','GithubProjects'],
+      tabs: ['Home', 'About', 'Projects'],
       icons: ['fa-brands fa-gripfire', 'fa-solid fa-hat-wizard', 'fa-solid fa-book-quran','fa-solid fa-wand-sparkles'],
       IconsColors: ['rgb(107, 228, 255)', '#FFFF00', '#FF78D4','rgb(120,430,100)'],
       IconsShadow: ['#A9FFFF', '#FFFCA1', '#e1a1bf','rgb(120,430,100)']
