@@ -105,6 +105,7 @@ section.about > main.main-about > div.photo > img.my-photo {
   border-radius: 8rem;
   border: 5px solid rgb(232, 212, 255);
   box-shadow: 0px 0px 440px 0px rgb(232, 212, 255);
+  animation: boxlight 10s infinite steps(80);
 }
 
 section.about > main.main-about > div > h5.description {
@@ -116,6 +117,11 @@ section.about > main.main-about > div > h5.description {
   max-width: 35rem;
   margin: 0px;
 }
+@keyframes boxlight {
+  from, to { box-shadow: 1px 2px 130px rgb(232, 212, 255); }
+  50% { box-shadow: 1px 2px 200px rgb(232, 212, 255);}
+}
+
 @media screen and (max-width: 1150px) {
   section.about > main.main-about > div.photo > img.my-photo {
     width: 8rem;

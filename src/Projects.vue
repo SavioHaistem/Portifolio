@@ -1,7 +1,7 @@
 <template>
   <main class="projects-body">
     <ul class="projects-list">
-      <li v-for="(project, index) in projects" :key="index" class="project-item">
+        <li v-for="(project, index) in projects" :key="index" class="project-item">
         <img :src="project.image" :alt="project.name" class="project-image" />
         <div class="project-info">
           <h3 class="project-name">{{ project.name }}</h3>
@@ -22,7 +22,7 @@ export default {
       techsVisibility: true,
       techNameVisibility: true,
       techNameIndex: null,
-      elementHovered: null
+      elementHovered: null,
     }
   },
   mounted() {
@@ -38,6 +38,7 @@ export default {
 *::-webkit-scrollbar {
   display: none;
 }
+
 @keyframes background-up {
   0% {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.105), rgba(80, 80, 80, 0));
