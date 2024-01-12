@@ -1,11 +1,18 @@
 <template>
   <main class="projects-body">
     <ul class="projects-list">
-        <li v-for="(project, index) in projects" :key="index" class="project-item">
-        <img :src="project.image" :alt="project.name" class="project-image" />
+      <li
+        v-for="(project, index) in projects"
+        :key="index"
+        class="project-item"
+        @mouseenter="mouseon(index, true)"
+        @mouseleave="mouseon(index, false)"
+      >
+        <img :src="project.image" :alt="project.name" class="project-image"/>
         <div class="project-info">
           <h3 class="project-name">{{ project.name }}</h3>
           <p class="project-description">{{ project.description }}</p>
+          <a :href="project.link" target="_blank" v-if="mousehover && hoverindex == index" class="project-link">Visitar</a>
         </div>
       </li>
     </ul>
@@ -19,18 +26,18 @@ export default {
   data() {
     return {
       projects: Jsondata.list,
-      techsVisibility: true,
-      techNameVisibility: true,
-      techNameIndex: null,
-      elementHovered: null,
+      mousehover: false,
+      hoverindex: null
     }
   },
-  mounted() {
-    console.log(this.projects)
+  methods: {
+    mouseon(index, value) {
+      this.mousehover = value;
+      this.hoverindex = index
+    }
   }
 }
 </script>
-
 <style scoped>
 * {
   font-family: josefin;
@@ -60,12 +67,12 @@ main.projects-body {
 .projects-body > ul.projects-list {
   overflow: scroll;
   margin: auto;
-  list-style: none;
   padding: 5rem;
-  width: 80vw;
+  list-style: none;
+  width: 80rem;
   display: grid;
   max-height: 70vh;
-  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-auto-rows: 22rem;
   grid-auto-flow: row;
   justify-items: center;
@@ -86,8 +93,8 @@ ul.projects-list > li.project-item {
 ul.projects-list > li.project-item:hover {
   box-shadow: 0px 0px 60px 0px rgba(0, 3, 3, 0.747);
   border: 2px solid white;
-  width: calc(100% + 2rem);
-  height: calc(100% + 2rem);
+  width: calc(18rem + 2rem);
+  height: calc(22rem + 2rem);
   z-index: 1;
 }
 ul.projects-list > li.project-item > div.project-info {
@@ -107,6 +114,18 @@ ul.projects-list > li.project-item > img.project-image {
   overflow: hidden;
 }
 
+li.project-item > div.project-info > a.project-link {
+  background-color: rgba(0, 127, 136, 0.603);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  width: 5rem;
+  height: 2rem;
+  line-height: 2.2rem;
+  border-radius: 5rem;
+}
 
 @media screen and (max-width: 1436px) {
   .projects-body > ul.projects-list {
