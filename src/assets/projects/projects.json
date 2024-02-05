@@ -31,6 +31,13 @@
       "description": "Frontend institucional do projeto Credio da empresa GearCop, um projeto que reúne bancos para empresas que financeiam veículos",
       "tecnologias": ["nuxtjs", "vue","pinia","typescript"],
       "link":"https://sharktech.vercel.app/"
+    },
+    {
+      "name":"Coffe API",
+      "image":"/images/projects/coffeeAPI.png",
+      "description":"API criada para o site Coffe Shop, responsavel por criar armazenar os tipos de cafés e criar novos cafés",
+      "tecnologias":["java","spring-boot"],
+      "link":""
     }
   ]
 }
