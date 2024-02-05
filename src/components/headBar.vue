@@ -35,6 +35,12 @@ p.user-name {
   color: #efefef;
   font-family: blkchcry;
   font-size: 60px;
+  animation: textlight 5s infinite steps(120);
+}
+
+@keyframes textlight {
+  from, to { text-shadow: 1px 2px 40px rgb(0, 188, 209); }
+  50% { text-shadow: 1px 2px 70px rgb(0, 229, 255);}
 }
 @media screen and (max-width: 428px) {
   p.rune {

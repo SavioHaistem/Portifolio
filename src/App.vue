@@ -63,6 +63,7 @@ section.back {
   height: 100vh;
 }
 section > nav.nav-bar {
+  z-index: 1;
   position: absolute;
   right: 0;
   bottom: 0;
