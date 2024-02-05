@@ -5,16 +5,28 @@
 <style>
 img.avatar {
   position: absolute;
-  width: 300px;
-  bottom: -40%;
+  width: 350px;
+  bottom: -30%;
   left: 0;
   z-index: -1;
-  height: 630px;
+  height: 720px;
+  margin-left: 10rem;
+}
+@media screen and (max-width: 1450px) {
+  img.avatar {
+    margin: 1rem;
+  }
 }
 @media screen and (max-width: 1046px) {
   img.avatar {
-    visibility: hidden;
-    display: none;
+    margin: 0px;
+    bottom: -45%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  img.avatar {
+    bottom: -50%;
   }
 }
 </style>

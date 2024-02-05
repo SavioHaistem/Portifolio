@@ -3,27 +3,29 @@
 import Home from './Home.vue'
 import About from './About.vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faHatWizard } from '@fortawesome/free-solid-svg-icons'
+import { faHatWizard, faWandSparkles } from '@fortawesome/free-solid-svg-icons'
 import { faGripfire } from '@fortawesome/free-brands-svg-icons'
 import { faBookQuran } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import Projects from './Projects.vue'
+import GithubProjects from './GithubProjects.vue'
 
-library.add(faHatWizard, faGripfire, faBookQuran)
+library.add(faHatWizard, faGripfire, faBookQuran, faWandSparkles)
 export default {
   components: {
     Home,
     About,
     Projects,
+    GithubProjects,
     FontAwesomeIcon
   },
   data() {
     return {
       currentTab: 'Home',
       tabs: ['Home', 'About', 'Projects'],
-      icons: ['fa-brands fa-gripfire', 'fa-solid fa-hat-wizard', 'fa-solid fa-book-quran'],
-      IconsColors: ['rgb(107, 228, 255)', '#FFFF00', '#FF78D4'],
-      IconsShadow: ['#A9FFFF', '#FFFCA1', '#e1a1bf']
+      icons: ['fa-brands fa-gripfire', 'fa-solid fa-hat-wizard', 'fa-solid fa-book-quran','fa-solid fa-wand-sparkles'],
+      IconsColors: ['rgb(107, 228, 255)', '#FFFF00', '#FF78D4','rgb(120,430,100)'],
+      IconsShadow: ['#A9FFFF', '#FFFCA1', '#e1a1bf','rgb(120,430,100)']
     }
   }
 }
@@ -61,6 +63,7 @@ section.back {
   height: 100vh;
 }
 section > nav.nav-bar {
+  z-index: 1;
   position: absolute;
   right: 0;
   bottom: 0;

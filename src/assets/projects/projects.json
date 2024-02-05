@@ -4,18 +4,21 @@
       "name": "gerenciador de senhas",
       "image": "/images/projects/gerenciador-screenshoot.jpg",
       "description": "Um gerenciador de senhas simples, utiliza local storage",
+      "link":"https://saviohaistem.github.io/gerenciador-de-senhas/",
       "tecnologias": ["javascript", "css", "html"]
     },
     {
       "name": "Aleator",
       "image": "/images/projects/aleator.png",
       "description": "Um projeto que faz sorteios baseado em números que o usuário escolheu de 1 a maximo escolhido, foi utilizado em um sorteio do web-aulão 2020 do Rio Grande do Norte",
+      "link":"https://saviohaistem.github.io/Aleator/",
       "tecnologias": ["javascript", "css","html"]
     },
     {
       "name": "GetMidia",
       "image": "/images/projects/getMidia.png",
       "description": "Projeto que utiliza a api tmdb para exibir ao usuário uma lista com imagens e descrição de todos os filmes séries e animes",
+      "link":"https://getmidia-ff1fa.web.app/",
       "tecnologias": ["javascript", "react","styled-components","axios"]
     },
     {
@@ -24,20 +27,6 @@
       "description": "Frontend da empresa Sharktech, venda do curso da empresa",
       "tecnologias": ["nextjs", "react","tailwind","typescript"],
       "link":"https://sharktech.vercel.app/"
-    },
-    {
-      "name": "Cred.io",
-      "image": "/images/projects/credio.png",
-      "description": "Frontend institucional do projeto Credio da empresa GearCop, um projeto que reúne bancos para empresas que financeiam veículos",
-      "tecnologias": ["nuxtjs", "vue","pinia","typescript"],
-      "link":"https://sharktech.vercel.app/"
-    },
-    {
-      "name":"Coffe API",
-      "image":"/images/projects/coffeeAPI.png",
-      "description":"API criada para o site Coffe Shop, responsavel por criar armazenar os tipos de cafés e criar novos cafés",
-      "tecnologias":["java","spring-boot"],
-      "link":""
     }
   ]
 }
