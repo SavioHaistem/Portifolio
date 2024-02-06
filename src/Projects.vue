@@ -8,11 +8,10 @@
         @mouseenter="mouseon(index, true)"
         @mouseleave="mouseon(index, false)"
       >
-        <img :src="project.image" :alt="project.name" class="project-image"/>
+        <img :src="project.image" :alt="project.name" class="project-image" />
         <div class="project-info">
           <h3 class="project-name">{{ project.name }}</h3>
           <p class="project-description">{{ project.description }}</p>
-          <a :href="project.link" target="_blank" v-if="mousehover && hoverindex == index" class="project-link">Visitar</a>
         </div>
       </li>
     </ul>
@@ -32,7 +31,7 @@ export default {
   },
   methods: {
     mouseon(index, value) {
-      this.mousehover = value;
+      this.mousehover = value
       this.hoverindex = index
     }
   }
@@ -69,7 +68,7 @@ main.projects-body {
   margin: auto;
   padding: 5rem;
   list-style: none;
-  width: 80rem;
+  max-width: 70vw;
   display: grid;
   max-height: 70vh;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
@@ -93,13 +92,14 @@ ul.projects-list > li.project-item {
 ul.projects-list > li.project-item:hover {
   box-shadow: 0px 0px 60px 0px rgba(0, 3, 3, 0.747);
   border: 2px solid white;
-  width: calc(18rem + 2rem);
-  height: calc(22rem + 2rem);
+  width: 17.5rem;
+  height: 22rem;
   z-index: 1;
 }
 ul.projects-list > li.project-item > div.project-info {
   color: rgb(214, 254, 255);
   padding: 0px 1.5rem;
+  max-height: fit-content;
 }
 ul.projects-list > li.project-item > div.project-info > p.project-description {
   color: white;
@@ -112,19 +112,6 @@ ul.projects-list > li.project-item > img.project-image {
   object-fit: cover;
   border-radius: 8px 8px 0px 0px;
   overflow: hidden;
-}
-
-li.project-item > div.project-info > a.project-link {
-  background-color: rgba(0, 127, 136, 0.603);
-  color: rgb(255, 255, 255);
-  text-align: center;
-  display: inline-block;
-  text-decoration: none;
-  font-weight: bold;
-  width: 5rem;
-  height: 2rem;
-  line-height: 2.2rem;
-  border-radius: 5rem;
 }
 
 @media screen and (max-width: 1436px) {
