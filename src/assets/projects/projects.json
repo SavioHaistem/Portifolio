@@ -27,6 +27,13 @@
       "description": "Frontend da empresa Sharktech, venda do curso da empresa",
       "tecnologias": ["nextjs", "react","tailwind","typescript"],
       "link":"https://sharktech.vercel.app/"
+    },
+    {
+      "name":"Coffee API",
+      "image":"/images/projects/coffeeAPI.png",
+      "description":"api do projeto Coffee shop utilizada para guardar dados e para os clientes conseguirem criar seu próprio café",
+      "tecnologias":["java","spring-boot"],
+      "link":""
     }
   ]
 }
