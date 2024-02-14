@@ -1,9 +1,10 @@
 <template>
   <main class="projects-body">
     <ul class="projects-list">
-      <li
+      <a
         v-for="(project, index) in projects"
         :key="index"
+        :href="project.link"
         class="project-item"
         @click="openProject(project.link)"
       >
@@ -12,14 +13,14 @@
           <h3 class="project-name">{{ project.name }}</h3>
           <p class="project-description">{{ project.description }}</p>
         </div>
-      </li>
+      </a>
     </ul>
   </main>
 </template>
 
 <script>
 import Jsondata from '@/assets/projects/projects.json'
-import { useLink } from 'vue-router';
+import { useLink } from 'vue-router'
 export default {
   name: 'projectsPage',
   data() {
@@ -75,7 +76,7 @@ main.projects-body {
   justify-content: center;
   align-items: center;
 }
-ul.projects-list > li.project-item {
+ul.projects-list > a.project-item {
   font-size: 15px;
   border: 1px solid rgba(160, 160, 160, 0.308);
   overflow: hidden;
@@ -86,24 +87,24 @@ ul.projects-list > li.project-item {
   border: 1px solid rgba(255, 255, 255, 0.356);
   border-radius: 8px;
 }
-ul.projects-list > li.project-item:hover {
+ul.projects-list > a.project-item:hover {
   box-shadow: 0px 0px 60px 0px rgba(0, 3, 3, 0.747);
   border: 2px solid white;
   width: 17.5rem;
   height: 22rem;
   z-index: 1;
 }
-ul.projects-list > li.project-item > div.project-info {
+ul.projects-list > a.project-item > div.project-info {
   color: rgb(214, 254, 255);
   padding: 0px 1.5rem;
   max-height: fit-content;
 }
-ul.projects-list > li.project-item > div.project-info > p.project-description {
+ul.projects-list > a.project-item > div.project-info > p.project-description {
   color: white;
   overflow: auto;
   height: 6rem;
 }
-ul.projects-list > li.project-item > img.project-image {
+ul.projects-list > a.project-item > img.project-image {
   width: 100%;
   height: 10rem;
   object-fit: cover;
@@ -118,12 +119,12 @@ ul.projects-list > li.project-item > img.project-image {
     grid-auto-rows: 21rem;
   }
 
-  ul.projects-list > li.project-item {
+  ul.projects-list > a.project-item {
     font-size: 14px;
     width: 17rem;
     height: 20rem;
   }
-  ul.projects-list > li.project-item:hover {
+  ul.projects-list > a.project-item:hover {
     width: calc(100% + 1rem);
     height: calc(100% + 1rem);
   }
@@ -135,12 +136,12 @@ ul.projects-list > li.project-item > img.project-image {
     grid-template-columns: repeat(auto-fill, minmax(14rem, 15rem));
     grid-auto-rows: 21rem;
   }
-  ul.projects-list > li.project-item {
+  ul.projects-list > a.project-item {
     font-size: 12px;
     width: 14rem;
     height: 20rem;
   }
-  ul.projects-list > li.project-item:hover {
+  ul.projects-list > a.project-item:hover {
     width: calc(14rem + 2rem);
     height: calc(20rem + 2rem);
   }
@@ -156,7 +157,7 @@ ul.projects-list > li.project-item > img.project-image {
     width: 13rem;
     height: 20rem;
   }
-  ul.projects-list > li.project-item:hover {
+  ul.projects-list > a.project-item:hover {
     width: 15.5rem;
     height: 22.5rem;
   }
