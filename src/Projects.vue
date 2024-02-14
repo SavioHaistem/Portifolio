@@ -5,8 +5,7 @@
         v-for="(project, index) in projects"
         :key="index"
         class="project-item"
-        @mouseenter="mouseon(index, true)"
-        @mouseleave="mouseon(index, false)"
+        @click="openProject(project.link)"
       >
         <img :src="project.image" :alt="project.name" class="project-image" />
         <div class="project-info">
@@ -20,19 +19,17 @@
 
 <script>
 import Jsondata from '@/assets/projects/projects.json'
+import { useLink } from 'vue-router';
 export default {
   name: 'projectsPage',
   data() {
     return {
-      projects: Jsondata.list,
-      mousehover: false,
-      hoverindex: null
+      projects: Jsondata.list
     }
   },
   methods: {
-    mouseon(index, value) {
-      this.mousehover = value
-      this.hoverindex = index
+    openProject(link) {
+      useLink.router.push(link)
     }
   }
 }
