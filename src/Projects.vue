@@ -101,6 +101,7 @@ ul.projects-list > a.project-item > div.project-info {
 }
 ul.projects-list > a.project-item > div.project-info > p.project-description {
   color: white;
+  text-decoration: none;
   overflow: auto;
   height: 6rem;
 }

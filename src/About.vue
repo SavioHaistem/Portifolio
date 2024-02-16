@@ -5,7 +5,7 @@ import headBar from './components/headBar.vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faWhatsapp, faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
-library.add(faWhatsapp, faGithub, faLinkedin, faInstagram);
+library.add(faWhatsapp, faGithub, faLinkedin, faInstagram)
 
 export default {
   name: 'aboutPage',
@@ -32,16 +32,16 @@ export default {
         </h5>
         <ul class="link-list">
           <a href="https://wa.me/5584999918236?text=Oi%20Sávio" class="link-item">
-            <font-awesome-icon :icon="['fab','fa-whatsapp']" class="link-icon whatsap" />
+            <font-awesome-icon :icon="['fab', 'fa-whatsapp']" class="link-icon whatsap" />
           </a>
           <a href="https://github.com/SavioHaistem" class="link-item">
-            <font-awesome-icon :icon="['fab','fa-github']" class="link-icon whatsap" />
+            <font-awesome-icon :icon="['fab', 'fa-github']" class="link-icon whatsap" />
           </a>
           <a href="https://www.linkedin.com/in/saviohaistem/" class="link-item">
-            <font-awesome-icon :icon="['fab','fa-linkedin']" class="link-icon whatsap" />
+            <font-awesome-icon :icon="['fab', 'fa-linkedin']" class="link-icon whatsap" />
           </a>
           <a href="https://www.instagram.com/saviohaistem/" class="link-item">
-            <font-awesome-icon :icon="['fab','fa-instagram']" class="link-icon whatsap" />
+            <font-awesome-icon :icon="['fab', 'fa-instagram']" class="link-icon whatsap" />
           </a>
         </ul>
       </div>
@@ -104,7 +104,7 @@ section.about > main.main-about > div.photo > img.my-photo {
   height: 15rem;
   border-radius: 8rem;
   border: 5px solid rgb(232, 212, 255);
-  box-shadow: 0px 0px 440px 0px rgb(232, 212, 255);
+  box-shadow: 0px 0px 240px 0px rgba(232, 212, 255, 0.678);
   animation: boxlight 10s infinite steps(80);
 }
 
@@ -118,8 +118,13 @@ section.about > main.main-about > div > h5.description {
   margin: 0px;
 }
 @keyframes boxlight {
-  from, to { box-shadow: 1px 2px 130px rgb(232, 212, 255); }
-  50% { box-shadow: 1px 2px 200px rgb(232, 212, 255);}
+  from,
+  to {
+    box-shadow: 0px 0px 80px 0px rgba(232, 212, 255, 0.418);
+  }
+  50% {
+    box-shadow: 0px 0px 100px 0px rgba(232, 212, 255, 0.5);
+  }
 }
 
 @media screen and (max-width: 1150px) {
