@@ -86,6 +86,7 @@ ul.projects-list > a.project-item {
   background-color: #4e415c;
   border: 1px solid rgba(255, 255, 255, 0.356);
   border-radius: 8px;
+  text-decoration: none;
 }
 ul.projects-list > a.project-item:hover {
   box-shadow: 0px 0px 60px 0px rgba(0, 3, 3, 0.747);
@@ -100,8 +101,7 @@ ul.projects-list > a.project-item > div.project-info {
   max-height: fit-content;
 }
 ul.projects-list > a.project-item > div.project-info > p.project-description {
-  color: white;
-  text-decoration: none;
+  color: rgb(235, 233, 236);
   overflow: auto;
   height: 6rem;
 }
