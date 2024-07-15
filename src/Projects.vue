@@ -13,6 +13,13 @@
           <h3 class="project-name">{{ project.name }}</h3>
           <p class="project-description">{{ project.description }}</p>
         </div>
+        <div class="project-tecnologies">
+          <ul class="tecnologies-list" >
+            <li class="tecnologie-rune" v-for="(icon, index) in project.tecnologias" :key="index">
+              <img :src='"../public/images/tecnologies/" + icon + ".png"' class="tecnologie-icon">
+            </li>
+          </ul>
+        </div>
       </a>
     </ul>
   </main>
@@ -113,6 +120,42 @@ ul.projects-list > a.project-item > img.project-image {
   overflow: hidden;
 }
 
+a.project-item > div.project-tecnologies {
+  display: none;
+}
+a.project-item:hover > div.project-tecnologies {
+  transform: translateY(-1.5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 3rem;
+}
+div.project-tecnologies > ul.tecnologies-list {
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 0.3rem;
+  list-style-type: none;
+}
+ul.tecnologies-list > li.tecnologie-rune {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 40px rgba(255, 111, 219, 0.829);
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 0px;
+}
+ul.tecnologies-list > li.tecnologie-rune > img.tecnologie-icon {
+  width: 31px;
+  height: 31px;
+  background-color: rgba(255, 126, 206, 0.185);
+  overflow: hidden;
+  border-radius: 5px;
+}
 @media screen and (max-width: 1436px) {
   .projects-body > ul.projects-list {
     width: 80vw;
