@@ -8,14 +8,12 @@ export default {
   data() {
     return {
       greenting: [
-        'Programar é como fazer magia, você precisa pensar em uma solução para algo, ',
-        'quando sabe o que deve fazer você irá tentar achar uma forma de fazer seus  pensamentos ',
-        'virarem realidade, e então você começa a organizar seus feitiços, vai ler alguns grimórios ',
-        'para ter certeza que está usando o melhor feitiço para  cada problema e então depois do ',
-        'relógio correr incontáveis horas enquanto você  configura seus feitiços da melhor forma ',
-        'que consegue a magia finalmente acontece, os computadores começarão a executar seu código ',
-        'e todas as regras que você pensou e irão fazer algo acontecer. O mundo moderno está cheio ',
-        'de magos programadores, feitiços tecnológicos.'
+          'Me chamo Sávio Haistem, tenho 21 anos, estudo programação desde os 18 anos, quando ',
+          'descobri que era a minha paixão. Desde criança sempre fui muito curioso em relação á ',
+          'tecnologias, então essa curiosidade naturalmente me levou um dia á me perguntar como são ',
+          'criados aplicativos ( mobiles ) o que me fez querer aprender a criar o meu próprio, ',
+          'futuramente ao iniciar a busca por qual carreira eu deveria seguir eu não tive mais ',
+          'dúvidas, serei programador.'
       ]
     }
   }
