@@ -16,7 +16,7 @@
         <div class="project-tecnologies">
           <ul class="tecnologies-list" >
             <li class="tecnologie-rune" v-for="(icon, index) in project.tecnologias" :key="index">
-              <img :src='"../public/images/tecnologies/" + icon + ".png"' class="tecnologie-icon">
+              <img :src='"/public/images/tecnologies/" + icon + ".png"' class="tecnologie-icon">
             </li>
           </ul>
         </div>
