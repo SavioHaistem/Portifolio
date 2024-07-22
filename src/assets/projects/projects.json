@@ -25,15 +25,33 @@
       "name": "Sharktech",
       "image": "/images/projects/sharktech.png",
       "description": "Frontend da empresa Sharktech, venda do curso da empresa",
-      "tecnologias": ["nextjs", "react","tailwind","typescript"],
-      "link":"https://sharktech.vercel.app/"
+      "tecnologias": ["nextjs", "react","tailwind","typescript"]
     },
     {
       "name":"Coffee API",
       "image":"/images/projects/coffeeAPI.png",
       "description":"api do projeto Coffee shop utilizada para guardar dados e para os clientes conseguirem criar seu próprio café",
-      "tecnologias":["java","spring-boot"],
+      "tecnologias":["java","maven","spring-boot"],
       "link":"https://github.com/SavioHaistem/CoffeBuilderAPI"
+    },
+    {
+      "name":"PowerPiece",
+      "image":"/images/projects/powerpiece.png",
+      "description":"Meu primeiro projeto java, um minigame de One Piece, onde você irá explorar dungeons",
+      "tecnologias":["java","maven","sqlite"],
+      "link":"https://github.com/SavioHaistem/PowerPiece"
+    },
+    {
+      "name":"Portifólio",
+      "image":"/images/projects/portifolio.png",
+      "description":"Meu primeiro projeto Vue.js, você já está neste projeto :)",
+      "tecnologias":["vue"]
+    },
+    {
+      "name":"Intergalatic CoffeeShop",
+      "image":"/images/projects/intergalatic-coffeeshop.png",
+      "description":"Simples projeto web que consome a coffee-API para disponibilizar ao usuário a possibilidade de criar cafés e comprar",
+      "tecnologias":["nuxt","typescript","pinia"]
     }
   ]
 }

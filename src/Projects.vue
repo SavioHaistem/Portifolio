@@ -150,9 +150,10 @@ ul.tecnologies-list > li.tecnologie-rune {
   padding: 0px;
 }
 ul.tecnologies-list > li.tecnologie-rune > img.tecnologie-icon {
-  width: 31px;
-  height: 31px;
-  background-color: rgba(255, 126, 206, 0.185);
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  background-color: rgb(255, 255, 255);
   overflow: hidden;
   border-radius: 5px;
 }
