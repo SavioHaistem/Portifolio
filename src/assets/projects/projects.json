@@ -24,20 +24,20 @@
     {
       "name": "Sharktech",
       "image": "/images/projects/sharktech.png",
-      "description": "Frontend da empresa Sharktech, venda do curso da empresa",
+      "description": "Frontend da empresa Sharktech, venda do curso da empresa, infelizmente o projeto não está mais no ar",
       "tecnologias": ["nextjs", "react","tailwind","typescript"]
     },
     {
       "name":"Coffee API",
       "image":"/images/projects/coffeeAPI.png",
-      "description":"api do projeto Coffee shop utilizada para guardar dados e para os clientes conseguirem criar seu próprio café",
+      "description":"Esta api entrega para o projeto Intergalatic Coffee-shop dá a opção do usuário fazer um CRUD simples",
       "tecnologias":["java","maven","spring-boot"],
       "link":"https://github.com/SavioHaistem/Coffee-api"
     },
     {
       "name":"PowerPiece",
       "image":"/images/projects/powerpiece.png",
-      "description":"Meu primeiro projeto java, um minigame de One Piece, onde você irá explorar dungeons",
+      "description":"Este foi meu primeiro projeto java, nele usei bastante conceitos como estrutura de dados, e também aprendi a fazer conexões com banco de dados sqlite usando jdbc",
       "tecnologias":["java","maven","sqlite"],
       "link":"https://github.com/SavioHaistem/PowerPiece"
     },
@@ -50,7 +50,7 @@
     {
       "name":"Intergalatic CoffeeShop",
       "image":"/images/projects/intergalatic-coffeeshop.png",
-      "description":"Simples projeto web que consome a coffee-API para disponibilizar ao usuário a possibilidade de criar cafés e comprar",
+      "description":"Frontend para a cafeteria Intergalática que dá ao usuário a opção de personalizar seu próprio café e compra-lo",
       "tecnologias":["nuxt","typescript","pinia"]
     }
   ]
