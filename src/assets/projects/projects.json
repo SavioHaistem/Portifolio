@@ -32,7 +32,7 @@
       "image":"/images/projects/coffeeAPI.png",
       "description":"api do projeto Coffee shop utilizada para guardar dados e para os clientes conseguirem criar seu próprio café",
       "tecnologias":["java","maven","spring-boot"],
-      "link":"https://github.com/SavioHaistem/CoffeBuilderAPI"
+      "link":"https://github.com/SavioHaistem/Coffee-api"
     },
     {
       "name":"PowerPiece",
