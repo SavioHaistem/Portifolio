@@ -14,6 +14,7 @@ img.avatar {
 }
 @media screen and (max-width: 1450px) {
   img.avatar {
+    display: none;
     margin: 1rem;
   }
 }

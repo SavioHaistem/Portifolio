@@ -4,14 +4,14 @@
       "name": "gerenciador de senhas",
       "image": "/images/projects/gerenciador-screenshoot.jpg",
       "description": "Um gerenciador de senhas simples, utiliza local storage",
-      "link":"https://saviohaistem.github.io/gerenciador-de-senhas/",
+      "link":"https://github.com/SavioHaistem/gerenciador-de-senhas",
       "tecnologias": ["javascript", "css", "html"]
     },
     {
       "name": "Aleator",
       "image": "/images/projects/aleator.png",
       "description": "Um projeto que faz sorteios baseado em números que o usuário escolheu de 1 a maximo escolhido, foi utilizado em um sorteio do web-aulão 2020 do Rio Grande do Norte",
-      "link":"https://saviohaistem.github.io/Aleator/",
+      "link":"https://github.com/SavioHaistem/Aleator",
       "tecnologias": ["javascript", "css","html"]
     },
     {

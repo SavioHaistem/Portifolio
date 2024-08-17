@@ -50,6 +50,9 @@ p.user-name {
     font-size: 40px;
   }
   @media screen and (max-width: 664px) {
+    header.main-header {
+      border: 1px solid red;
+    }
   }
 }
 </style>
